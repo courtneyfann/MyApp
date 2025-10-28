@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -22,7 +23,16 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        {/*header*/}
+        <header style={{ padding : 12 }}> 
+          <nav>
+            <Link href="/">home</Link> {" | "}
+            <Link href="/about">about</Link> {" | "}
+            <Link href="/portfolio">portfolio</Link> {" | "}
+          </nav>
+        </header>
+        {/*page content*/}
+        <main stype={{ padding :12 }}>{children}</main> 
       </body>
     </html>
   );
