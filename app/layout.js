@@ -26,9 +26,9 @@ export default function RootLayout({ children }) {
         {/*header*/}
         <header style={{ padding : 12 }}> 
           <nav>
-            <Link href="/">home</Link> {" | "}
-            <Link href="/about">about</Link> {" | "}
-            <Link href="/portfolio">portfolio</Link> {" | "}
+            <Link href="/">Home</Link> {" | "}
+            <Link href="/about">About</Link> {" | "}
+            <Link href="/portfolio">Portfolio</Link> {" | "}
           </nav>
         </header>
         {/*page content*/}

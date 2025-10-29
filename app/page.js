@@ -1,6 +1,6 @@
 export default function HomePage() {
       return (
-        <div>
+        <div style= {{padding : 12}}>
           <h1>HomePage</h1>
           <p>Welcome to my portfolio home page! Here are some of my projects:</p>
           

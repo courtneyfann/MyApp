@@ -1,6 +1,6 @@
 export default function PortfolioPage() {
       return (
-        <div>
+        <div style= {{padding : 12}}>
           <h1>My Portfolio</h1>
           <p>Welcome to my portfolio page! Here are some of my projects:</p>
           
