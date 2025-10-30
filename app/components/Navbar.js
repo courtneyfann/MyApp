@@ -5,6 +5,7 @@ import React , {useRef} from 'react'
 
 const Navbar = () => {
 
+    
     const sideMenuRef = useRef();
     const openMenu = ()=>{
         sideMenuRef.current.style.transform = 'translateX(-16rem)'
@@ -13,15 +14,17 @@ const Navbar = () => {
         sideMenuRef.current.style.transform = 'translateX(16rem)'
     }
 
+    
+
     return (
     <>
     <div className='fixed top-0 right-0 w-11/12 -z-10 translate-y-[80%]'>
         <Image src={assets.header_bg_color} alt='' className='w-full' />
     </div>
-        <nav className='w-full fixed px-5 lg:px-8 xl:px-[8%] py-4
+        <nav className='w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 
         flex items-center justify-between z-50'>
             <a href="#top">
-                <Image src={assets.logo} alt = " " className='w-28  
+                <Image src={assets.courtney} alt = " " className='w-32  
                 cursor-pointer mr-14'/>
             </a>
 
@@ -34,9 +37,7 @@ const Navbar = () => {
 
             <div className='flex items-center cap-4'>
 
-                <button >
-                    <Image src={assets.moon_icon} alt='' className='w-6' />
-                </button>
+                
 
                 <a href="#contact" className='hidden lg:flex items-center gap-3
                 px-10 py-2.5 border boarder-gray-500 rounded-full ml-4 font-Ovo'>
